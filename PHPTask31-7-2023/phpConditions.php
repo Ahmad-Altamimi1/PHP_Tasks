@@ -122,8 +122,8 @@
     echo "See bellow for the calculator " . "<br>";
 
     if (isset($_POST['sub'])) {
-        $num1 = (int)$_POST['n1'];
-        $num2 = (int)$_POST['n2'];
+        $num1 = (float)$_POST['n1'];
+        $num2 = (float)$_POST['n2'];
         $oprnd = $_POST['sub'];
         if ($oprnd == "+")
             $ans = $num1 + $num2;
@@ -133,6 +133,11 @@
             $ans = $num1 * $num2;
         else if ($oprnd == "/")
             $ans = $num1 / $num2;
+    }
+    if (isset($_POST["sub"])) {
+    $num1=$_POST["n1"];
+    $num2=$_POST["n2"];
+    
     }
     echo "<br><br>";
 

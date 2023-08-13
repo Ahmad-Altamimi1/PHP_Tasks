@@ -45,5 +45,37 @@ for ($j=-1; $j <$i ; $j++) {
 }
 
 echo "<br>";
+   echo " <br>Q10.............................................. <br>";
+range("A"," B");
 }
+// echo range("A"," B");
 ?>
+<?php
+$chars = range('A', 'E');
+$words = [];
+foreach ($chars as $char1) {
+        $words[] = $char1;  
+}
+
+
+// for ($i=0; $i <5 ; $i++) { 
+// for ($j=0; $j <count($words) ; $j++) { 
+//    // echo $char1[$i];
+//   echo $words[$j] ;
+// }
+// echo "<br>";
+// array_pop($words);
+// }
+$words = ["A", "B", "C", "D", "E"];
+
+for ($i = 0; $i < 5; $i++) {
+    for ($k = 5 - $i; $k > 0; $k--) {
+        echo "&nbsp;&nbsp;";
+    }
+    for ($j = 0; $j <= $i; $j++) {
+        echo $words[$j] . " ";
+    }
+    echo "<br>";
+}
+
+// print_r($words);
